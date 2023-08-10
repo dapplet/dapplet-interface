@@ -17,7 +17,7 @@ function Sidebar() {
     <div id="sidebar">
       <a
         className="sidebar-logo"
-        href="https://dapplet.app"
+        href="https://dapplet.io"
         target="_blank"
         rel="noreferrer"
       >

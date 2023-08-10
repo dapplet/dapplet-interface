@@ -102,7 +102,7 @@ function SwitchChains() {
           </SlTooltip>
           <SlDivider vertical className="m-0 h-8" />
           <SlTooltip content="Home" placement="top">
-            <a href="https://dapplet.app" target="_blank" rel="noreferrer">
+            <a href="https://dapplet.io" target="_blank" rel="noreferrer">
               {' '}
               <img src="/dapplet-logo.png" alt="logo" className="h-8 w-8" />
             </a>

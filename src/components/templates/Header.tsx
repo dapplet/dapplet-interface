@@ -13,7 +13,7 @@ function Header() {
         {isMobile ? (
           <>
             <MenuDrawer />
-            <a href="https://dapplet.app" target="_blank" rel="noreferrer">
+            <a href="https://dapplet.io" target="_blank" rel="noreferrer">
               {' '}
               <img src="/dapplet-logo.png" alt="logo" className="h-10 w-10" />
             </a>

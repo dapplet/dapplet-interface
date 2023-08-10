@@ -1,7 +1,7 @@
 import { Goerli, Hardhat, Mainnet, Sepolia } from '@usedapp/core';
 
 const rootName = 'dapplet.eth';
-const domain = 'dapplet.app';
+const domain = 'dapplet.io';
 
 export function getAppShell(chainId: number, name: string) {
   switch (chainId) {

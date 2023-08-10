@@ -36,7 +36,7 @@ export const menuItems: menuItem[] = [
           {
             name: 'Docs',
             icon: 'book',
-            href: 'https://docs.dapplet.app/',
+            href: 'https://docs.dapplet.io/',
           },
           {
             name: 'GitHub',

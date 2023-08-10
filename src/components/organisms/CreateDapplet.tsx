@@ -57,7 +57,7 @@ function CreateDapplet() {
           <div className="flex justify-end gap-4">
             <SlButton
               variant="default"
-              href="https://docs.dapplet.app"
+              href="https://docs.dapplet.io"
               target="_blank"
             >
               Learn More

@@ -52,8 +52,8 @@ function CreateDappForm() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <SlDetails summary="Terms & Conditions">
           This project is still on testnet. Please be sure to read our{' '}
-          <a href="https://docs.dapplet.app">documentation</a> and{' '}
-          <a href="https://dapplet.app/about">about</a> to understand the risks
+          <a href="https://docs.dapplet.io">documentation</a> and{' '}
+          <a href="https://dapplet.io/about">about</a> to understand the risks
           of using this platform. You are solely liable for any damages caused
           by adding and/or removing modules on your Dapp. Please be aware of 1)
           what you are signing, and 2) whether a module is safe to use.
