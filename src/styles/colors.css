@@ -1,0 +1,198 @@
+#header {
+  background: var(--sl-panel-background-color);
+  border-bottom: 1px solid var(--sl-border-color-primary);
+}
+
+#main {
+  background: var(--sl-background-color-secondary);
+}
+
+#sidebar {
+  background: var(--sl-panel-background-color);
+}
+
+#footer {
+  background: var(--sl-background-color);
+  border-top: 1px solid var(--sl-border-color-primary);
+}
+:root,
+:host,
+.sl-theme-light {
+  /* Background colors */
+  --sl-background-color: #fff;
+  --sl-background-color-hover: #f5f5f5;
+  --sl-background-color-active: #e5e5e5;
+  --sl-background-color-focus: #e5e5e5;
+  --sl-background-color-selected: #e5e5e5;
+  --sl-background-color-disabled: #f5f5f5;
+  --sl-background-color-secondary: #f5f5f5;
+  --sl-background-color-secondary-hover: #e5e5e5;
+  --sl-background-color-secondary-active: #d5d5d5;
+
+  /* Border colors */
+  --sl-border-color-hover: #e5e5e5;
+  --sl-border-color-active: #d5d5d5;
+  --sl-border-color-focus: #d5d5d5;
+  --sl-border-color-disabled: #e5e5e5;
+  --sl-border-color-primary: #e5e5e5;
+  --sl-border-color-secondary: #e5e5e5;
+  --sl-border-color-secondary-hover: #d5d5d5;
+  --sl-border-color-secondary-active: #c5c5c5;
+
+  /* Text colors */
+  --sl-color: #333;
+  --sl-color-hover: #333;
+  --sl-color-active: #333;
+  --sl-color-focus: #333;
+  --sl-color-selected: #333;
+  --sl-color-disabled: #999;
+  --sl-color-primary: #333;
+  --sl-color-primary-hover: #333;
+  --sl-color-primary-active: #333;
+  --sl-color-primary-focus: #333;
+  --sl-color-primary-selected: #333;
+  --sl-color-primary-disabled: #999;
+  --sl-color-secondary: #999;
+  --sl-color-secondary-hover: #999;
+  --sl-color-secondary-active: #999;
+  --sl-color-secondary-focus: #999;
+  --sl-color-secondary-selected: #999;
+
+  /* Shadow colors */
+  --sl-shadow-color: rgba(0, 0, 0, 0.1);
+  --sl-shadow-color-hover: rgba(0, 0, 0, 0.2);
+  --sl-shadow-color-active: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-focus: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-disabled: rgba(0, 0, 0, 0.1);
+  --sl-shadow-color-primary: rgba(0, 0, 0, 0.1);
+  --sl-shadow-color-primary-hover: rgba(0, 0, 0, 0.2);
+  --sl-shadow-color-primary-active: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-primary-focus: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-primary-disabled: rgba(0, 0, 0, 0.1);
+  --sl-shadow-color-secondary: rgba(0, 0, 0, 0.1);
+  --sl-shadow-color-secondary-hover: rgba(0, 0, 0, 0.2);
+  --sl-shadow-color-secondary-active: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-secondary-focus: rgba(0, 0, 0, 0.3);
+  --sl-shadow-color-secondary-disabled: rgba(0, 0, 0, 0.1);
+
+  /* Shadow styles */
+  --sl-shadow-small: 0 0.125rem 0.25rem var(--sl-shadow-color);
+  --sl-shadow-small-hover: 0 0.25rem 0.5rem var(--sl-shadow-color-hover);
+  --sl-shadow-small-active: 0 0.375rem 0.75rem var(--sl-shadow-color-active);
+  --sl-shadow-small-focus: 0 0.375rem 0.75rem var(--sl-shadow-color-focus);
+  --sl-shadow-small-disabled: 0 0.125rem 0.25rem var(--sl-shadow-color-disabled);
+  --sl-shadow-small-primary: 0 0.125rem 0.25rem var(--sl-shadow-color-primary);
+  --sl-shadow-small-primary-hover: 0 0.25rem 0.5rem
+    var(--sl-shadow-color-primary-hover);
+  --sl-shadow-small-primary-active: 0 0.375rem 0.75rem
+    var(--sl-shadow-color-primary-active);
+  --sl-shadow-small-primary-focus: 0 0.375rem 0.75rem
+    var(--sl-shadow-color-primary-focus);
+  --sl-shadow-small-primary-disabled: 0 0.125rem 0.25rem
+    var(--sl-shadow-color-primary-disabled);
+  --sl-shadow-small-secondary: 0 0.125rem 0.25rem
+    var(--sl-shadow-color-secondary);
+  --sl-shadow-small-secondary-hover: 0 0.25rem 0.5rem
+    var(--sl-shadow-color-secondary-hover);
+  --sl-shadow-small-secondary-active: 0 0.375rem 0.75rem
+    var(--sl-shadow-color-secondary-active);
+  --sl-shadow-small-secondary-focus: 0 0.375rem 0.75rem
+    var(--sl-shadow-color-secondary-focus);
+  --sl-shadow-small-secondary-disabled: 0 0.125rem 0.25rem
+    var(--sl-shadow-color-secondary-disabled);
+
+  --sl-panel-border-color: #e5e5e5;
+}
+
+:root,
+:host,
+.sl-theme-dark {
+  /* Background colors */
+  --sl-background-color: #1e1e1e;
+  --sl-background-color-hover: #2e2e2e;
+  --sl-background-color-active: #3e3e3e;
+  --sl-background-color-focus: #3e3e3e;
+  --sl-background-color-selected: #3e3e3e;
+  --sl-background-color-disabled: #2e2e2e;
+  --sl-background-color-secondary: #1b1a1e;
+  --sl-background-color-secondary-hover: #3e3e3e;
+  --sl-background-color-secondary-active: #4e4e4e;
+
+  /* Border colors */
+  --sl-border-color-hover: #3e3e3e;
+  --sl-border-color-active: #4e4e4e;
+  --sl-border-color-focus: #4e4e4e;
+  --sl-border-color-disabled: #3e3e3e;
+  --sl-border-color-primary: #3e3e3e;
+  --sl-border-color-secondary: #3e3e3e;
+  --sl-border-color-secondary-hover: #4e4e4e;
+  --sl-border-color-secondary-active: #5e5e5e;
+
+  /* Text colors */
+  --sl-color-primary: #fff;
+  --sl-color-primary-hover: #fff;
+  --sl-color-primary-active: #fff;
+  --sl-color-primary-focus: #fff;
+  --sl-color-primary-disabled: #e5e5e5;
+  --sl-color-secondary: #fff;
+  --sl-color-secondary-hover: #fff;
+  --sl-color-secondary-active: #fff;
+  --sl-color-secondary-focus: #fff;
+  --sl-color-success: #5cb85c;
+  --sl-color-success-hover: #4cae4c;
+  --sl-color-success-active: #419641;
+  --sl-color-success-focus: #419641;
+  --sl-color-success-disabled: #4cae4c;
+  --sl-color-info: #5bc0de;
+  --sl-color-info-hover: #46b8da;
+  --sl-color-info-active: #31b0d5;
+  --sl-color-info-focus: #31b0d5;
+  --sl-color-info-disabled: #46b8da;
+  --sl-color-warning: #f0ad4e;
+  --sl-color-warning-hover: #eea236;
+  --sl-color-warning-active: #ed9c0a;
+  --sl-color-warning-focus: #ed9c0a;
+  --sl-color-warning-disabled: #eea236;
+  --sl-color-danger: #d9534f;
+  --sl-color-danger-hover: #d43f3a;
+  --sl-color-danger-active: #d2322d;
+  --sl-color-danger-focus: #d2322d;
+
+  --sl-panel-border-color: #3e3e3e;
+}
+
+.sl-toast-stack .toast {
+  word-wrap: break-word;
+}
+.sl-toast-stack .toast-dark::part(base) {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: solid var(--sl-panel-border-width) #3e3e3e;
+  border-top-width: calc(var(--sl-panel-border-width) * 3);
+  /* border-top-color: var(--sl-color-primary-600); */
+}
+
+.sl-toast-stack .toast-light::part(base) {
+  background-color: #fff;
+  color: #333;
+  border: solid var(--sl-panel-border-width) #e5e5e5;
+  border-top-width: calc(var(--sl-panel-border-width) * 3);
+  box-shadow: var(--sl-shadow-large);
+  /* border-top-color: var(--sl-color-primary-600); */
+}
+
+.sl-toast-stack .primary::part(base) {
+  border-top-color: var(--sl-color-primary-600);
+}
+
+.sl-toast-stack .warning::part(base) {
+  border-top-color: var(--sl-color-warning-600);
+}
+
+.sl-toast-stack .danger::part(base) {
+  border-top-color: var(--sl-color-danger-600);
+}
+
+.sl-toast-stack .success::part(base) {
+  border-top-color: var(--sl-color-success-600);
+}

@@ -1,0 +1,86 @@
+:root {
+  --header-height: 4rem;
+  --sidebar-width: 20rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+}
+
+#sidebar {
+  position: relative;
+  overflow-y: auto;
+  width: var(--sidebar-width);
+  background-color: var(--sl-panel-background-color);
+  height: 100vh;
+}
+
+#sidebar::-webkit-scrollbar,
+#template::-webkit-scrollbar {
+  display: none;
+}
+
+#header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#template {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+  box-shadow: 0 0.125rem 0.25rem var(--sl-shadow-color) inset;
+}
+
+:root,
+:host,
+.sl-theme-dark,
+.sl-theme-light {
+  --sl-border-radius-small: 0.25rem;
+  --sl-border-radius-medium: 0.5rem;
+  --sl-border-radius-large: 1rem;
+  --sl-border-radius-x-large: 2rem;
+
+  --sl-button-padding-x: 1.5rem;
+  --sl-button-padding-y: 0.75rem;
+  --sl-button-border-radius: var(--sl-border-radius-medium);
+  --sl-button-font-size: var(--sl-font-size);
+  --sl-button-font-weight: var(--sl-font-weight);
+  --sl-button-letter-spacing: var(--sl-letter-spacing);
+  --sl-button-line-height: var(--sl-line-height);
+  --sl-button-text-transform: uppercase;
+  --sl-button-transition: all 0.2s ease-in-out;
+
+  --sl-font-size-small: 0.875rem;
+  --sl-font-size-medium: 1rem;
+  --sl-font-size-large: 1.25rem;
+  --sl-font-size-x-large: 1.5rem;
+  --sl-font-size-xx-large: 2rem;
+  --sl-font-size-xxx-large: 2.5rem;
+  --sl-font-size-xxxx-large: 3rem;
+
+  --sl-spacing-xxx-small: 0.25rem;
+  --sl-spacing-xx-small: 0.5rem;
+  --sl-spacing-x-small: 0.75rem;
+  --sl-spacing-small: 1rem;
+  --sl-spacing-medium: 1.5rem;
+  --sl-spacing-large: 2rem;
+  --sl-spacing-x-large: 3rem;
+  --sl-spacing-xx-large: 4rem;
+  --sl-spacing-xxx-large: 6rem;
+  --sl-spacing-xxxx-large: 8rem;
+}
+
+.sl-toast-stack {
+  bottom: 0;
+  top: auto;
+}

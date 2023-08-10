@@ -1,0 +1,25 @@
+{
+  "diamonds": [
+    {
+      "name": "System",
+      "facets": [
+        "DappsFacet",
+        "DappletsFacet",
+        "DiamondCutFacet",
+        "DiamondLoupeFacet",
+        "ERC165Facet",
+        "OperatorFacet",
+        "OwnershipFacet"
+      ]
+    },
+    {
+      "name": "Client",
+      "facets": [
+        "DiamondLoupeFacet",
+        "ERC165Facet",
+        "Installer",
+        "OwnershipFacet"
+      ]
+    }
+  ]
+}

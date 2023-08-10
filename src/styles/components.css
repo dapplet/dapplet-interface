@@ -1,0 +1,732 @@
+.jazzicon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.jazzicon-btn::part(base) {
+  border-width: 0.15rem;
+}
+.jazzicon-ctr {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wallet-btn::part(label) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wallet-btn::part(prefix) {
+  position: relative;
+  padding: 0.25rem;
+  margin-right: 0.75rem;
+}
+.menu-switch {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--sl-transition-medium);
+  border: var(--sl-input-border-width) solid var(--sl-color-gray-200);
+  border-radius: var(--sl-border-radius-medium);
+}
+.menu-switch::part(base) {
+  padding: 0 var(--sl-spacing-small);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.menu-switch::part(label) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.menu-switch:hover {
+  border-color: var(--sl-color-primary-500);
+}
+
+.header-logo {
+  cursor: pointer;
+}
+
+.dashboard-page {
+  /* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
+  padding: 1em;
+  overflow: scroll;
+}
+
+/* Introducing Dapplet Cards - a flexible and interactive UI component */
+.dapplet-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 0;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .dapplet-cards {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dapplet-cards {
+    justify-content: start;
+  }
+}
+
+/* Create a container for the dapplet cards */
+.dapplet-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Define the base style for the dapplet card */
+.dapplet-card::part(base) {
+  width: 9rem;
+  height: 9rem;
+  transition: var(--sl-transition-medium);
+}
+
+/* Add hover effect to the dapplet card */
+.dapplet-card::part(base):hover {
+  box-shadow: var(--shadow-medium-hover);
+  border-color: #7b7b7b;
+  transition-property: background-color, transform, box-shadow, border-radius;
+  transition-duration: 0.1s;
+}
+
+/* Define the body of the dapplet card */
+.dapplet-card::part(body) {
+  width: 9rem;
+  height: 9rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the icon in the dapplet card */
+.dapplet-card-icon {
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* overflow: hidden; */
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+}
+
+/* Add content to the dapplet card */
+.dapplet-card-content {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Add a title to the dapplet card */
+.dapplet-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:root {
+  --border-radius-medium: 0.5rem;
+  --transition-medium: all 0.3s ease;
+  --shadow-small: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-medium-hover: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dapp-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .dapp-cards {
+    justify-content: center;
+  }
+  .dapp-card {
+    width: 100%;
+    max-width: 26rem;
+    min-width: 12rem;
+    /* shrink if able */
+    flex: 1 1 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dapp-cards {
+    justify-content: start;
+  }
+  .dapp-card {
+    width: 12rem;
+  }
+}
+
+/* Define the base style for the dapplet card */
+.dapp-card::part(base) {
+  width: 100%;
+  height: 14rem;
+  transition: var(--sl-transition-medium);
+  cursor: pointer;
+}
+
+/* Add hover effect to the dapplet card */
+.dapp-card::part(base):hover {
+  box-shadow: var(--shadow-medium-hover);
+  border-color: #7b7b7b;
+  transition-property: background-color, transform, box-shadow, border-radius;
+  transition-duration: 0.1s;
+}
+
+/* Define the body of the dapplet card */
+.dapp-card::part(body) {
+  width: 100%;
+  height: 50%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+}
+
+/* Style the banner of the Dapplet Card */
+.dapp-card::part(header) {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.jazzbanner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+.jazzbanner {
+  position: relative;
+  transform: scale(1.4);
+  transition: var(--sl-transition-medium);
+  opacity: 0.85;
+}
+
+/* DappCard hover effects */
+.dapp-card:hover .jazzbanner {
+  transform: scale(2);
+  opacity: 1;
+}
+.dapp-card:hover .dapp-card-title {
+  text-shadow: var(--sl-shadow-small-hover);
+}
+
+/* Style the title in the dapplet card */
+.dapp-card-title {
+  overflow: hidden;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  text-shadow: var(--sl-shadow-small);
+}
+
+/* Add content to the dapplet card */
+.dapp-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dashboard-main-panel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 1rem;
+}
+/* .dashboard-main-panel::part(base) {
+  min-width: none;
+} */
+
+@media (max-width: 768px) {
+  .dashboard-main-panel {
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboard-main-panel {
+    padding: 1rem 0;
+  }
+}
+
+.dapplet-main-panel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1rem 1rem;
+}
+
+.dashboard-info-panel {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.menu-drawer-item {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+  transition: var(--sl-transition-medium);
+  border-bottom: var(--sl-input-border-width) solid var(--sl-color-gray-200);
+}
+.menu-drawer-item:hover {
+  border-color: var(--sl-color-primary-500);
+}
+.menu-drawer-item:active {
+  border-color: var(--sl-color-primary-700);
+}
+.menu-drawer-item::part(base) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menu-tree {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* overflow: hidden; */
+}
+.menu-node {
+  width: 25em;
+  overflow: hidden;
+}
+.menu-element {
+  overflow-wrap: break-word;
+}
+
+.copy-input::part(input) {
+  padding: 0 0.7em 0 1.2em;
+  text-overflow: ellipsis;
+  font-size: medium;
+}
+.copy-input::part(suffix) {
+  width: 2.1em;
+}
+.copy-input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-input-btn::part(base) {
+  padding: 0;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-input-btn::part(label) {
+  font-size: large;
+}
+
+.address-link {
+  height: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2;
+}
+.address-link a {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.create-cards {
+  max-width: 90em;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.notifications {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 30em;
+  z-index: 1000;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1em;
+  /* background-color: red; */
+}
+
+.generate-template-text {
+  font-size: large;
+  margin-bottom: 1em;
+}
+.generate-template-link {
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.install-uninstall-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.readme-container {
+  width: 100%;
+  overflow: wrap;
+  text-overflow: wrap;
+}
+
+.readme-code-wrap {
+  background-color: var(--sl-background-color-secondary);
+  overflow: wrap;
+  white-space: pre-wrap;
+  border-radius: var(--sl-border-radius-medium);
+  padding: 0.5em;
+}
+
+.readme-img {
+  max-width: 100%;
+}
+.wallet::part(base) {
+  padding: 1.5rem 0;
+}
+
+.wallet::part(base):hover {
+  background: var(--sl-panel-background-color);
+  cursor: default;
+}
+
+.header-link:not(:last-of-type) {
+  margin-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar-link:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+}
+
+.dapplet-panels {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.dapplet-menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .dapplet-panels {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dapplet-panels {
+    flex-direction: row;
+  }
+}
+
+.dapplet-info-panel {
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.stake-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.stake-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  min-width: 12rem;
+  flex: 1 1 12rem;
+}
+
+.stake-card::part(base) {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+}
+
+.stake-card::part(body) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.stake-modal::part(body) {
+  padding: 0.5rem;
+}
+
+.stake-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 30rem;
+}
+.stake-input,
+.unstake-input {
+  display: flex;
+  gap: 1rem;
+}
+
+.create-link {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  width: 100%;
+  max-width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--sl-panel-background-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  z-index: 1000;
+}
+.sidebar-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: var(--header-height);
+  padding: 0 1rem;
+  overflow-y: scroll;
+}
+
+.sidebar-logo {
+  height: var(--header-height);
+  /* flex items-center justify-center gap-2 fixed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  margin: 0;
+}
+
+.sidebar-link {
+  width: 100%;
+}
+.sidebar-link::part(base) {
+  padding: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-drawer-trigger {
+  position: absolute;
+  height: var(--header-height);
+  width: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.jazzicon-btn::part(base):hover {
+  box-shadow: var(--shadow-medium-hover);
+  transition: var(--sl-transition-medium);
+}
+
+.filter::part(input) {
+  width: 100%;
+}
+
+.sidebar-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alert::part(base) {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard-tabs::part(base) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-tabs::part(base) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.terms-and-conditions {
+  background-color: var(--sl-background-color);
+  padding: 1rem;
+  border-radius: var(--sl-border-radius-medium);
+}
+
+.switch-chains-dialog::part(panel) {
+  width: 17rem;
+}
+
+.switch-chains-dialog::part(body) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  padding-top: 2rem;
+}
+.switch-chains-dialog::part(footer) {
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.dapp-card {
+  position: relative;
+}
+
+.options-container {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.plus-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #74b6c5;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.plus-button i {
+  position: absolute;
+  top: 38%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.options {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 1000;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.options-container.active .options {
+  display: block;
+}
+
+.options button {
+  display: block;
+  background: none;
+  border: none;
+  color: #74b6c5;
+  font-size: 14px;
+  padding: 8px 0;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 90px;
+}
+
+.options button:hover {
+  background-color: #f5f5f5;
+  color: #000000;
+  border-radius: 4px;
+}
+
+
